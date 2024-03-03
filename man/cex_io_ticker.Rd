@@ -12,7 +12,8 @@ cex_io_ticker(symbol_1, symbol_2)
 \item{symbol_2}{the second currency in your pair}
 }
 \value{
-returns a list with basic trading information about your specified currency pair for the last 24 hours.
+returns a list with basic trading information about your specified
+currency pair for the last 24 hours.
 }
 \description{
 cex_io_ticker

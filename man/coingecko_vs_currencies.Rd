@@ -7,7 +7,7 @@
 coingecko_vs_currencies()
 }
 \value{
-returns a character vector containg all supported currencies on
+returns a character vector containing all supported currencies on
 Coingecko.
 }
 \description{
