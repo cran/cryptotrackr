@@ -4,10 +4,12 @@
 \alias{solana_get_genesis_hash}
 \title{solana_get_genesis_hash}
 \usage{
-solana_get_genesis_hash(url)
+solana_get_genesis_hash(url, timeout_seconds = 60)
 }
 \arguments{
 \item{url}{the RPC url for your API call}
+
+\item{timeout_seconds}{seconds until the query times out. Default is 60.}
 }
 \value{
 Returns the genesis hash
@@ -16,6 +18,7 @@ Returns the genesis hash
 solana_get_genesis_hash
 }
 \examples{
+\donttest{
 url <- "https://api.devnet.solana.com"
-data <- solana_get_genesis_hash(url)
+data <- solana_get_genesis_hash(url)}
 }

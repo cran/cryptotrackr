@@ -4,10 +4,12 @@
 \alias{solana_get_block_height}
 \title{solana_get_block_height}
 \usage{
-solana_get_block_height(url)
+solana_get_block_height(url, timeout_seconds = 60)
 }
 \arguments{
 \item{url}{the RPC url for your API call}
+
+\item{timeout_seconds}{seconds until the query times out. Default is 60.}
 }
 \value{
 Returns the current block height of the node
@@ -16,6 +18,7 @@ Returns the current block height of the node
 solana_get_block_height
 }
 \examples{
+\donttest{
 url <- "https://api.devnet.solana.com"
-data <- solana_get_block_height(url)
+data <- solana_get_block_height(url)}
 }

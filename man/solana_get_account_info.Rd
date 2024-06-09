@@ -4,12 +4,14 @@
 \alias{solana_get_account_info}
 \title{solana_get_account_info}
 \usage{
-solana_get_account_info(url, pubkey)
+solana_get_account_info(url, pubkey, timeout_seconds = 60)
 }
 \arguments{
 \item{url}{the RPC url for your API call}
 
 \item{pubkey}{the pubkey for which you're retrieving account info}
+
+\item{timeout_seconds}{seconds until the query times out. Default is 60.}
 }
 \value{
 Returns all information associated with the account of provided Pubkey
@@ -18,7 +20,8 @@ Returns all information associated with the account of provided Pubkey
 solana_get_account_info
 }
 \examples{
+\donttest{
 url <- "https://api.devnet.solana.com"
 pubkey <- "vines1vzrYbzLMRdu58ou5XTby4qAqVRLmqo36NKPTg"
-data <- solana_get_account_info(url, pubkey)
+data <- solana_get_account_info(url, pubkey)}
 }

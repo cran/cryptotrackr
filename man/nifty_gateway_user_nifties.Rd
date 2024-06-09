@@ -8,7 +8,8 @@ nifty_gateway_user_nifties(
   username,
   limit = NULL,
   offset = NULL,
-  contract_address = NULL
+  contract_address = NULL,
+  timeout_seconds = 60
 )
 }
 \arguments{
@@ -21,6 +22,8 @@ is a numeric parameter.}
 parameter.}
 
 \item{contract_address}{optionally filter results by contract address.}
+
+\item{timeout_seconds}{seconds until the query times out. Default is 60.}
 }
 \value{
 returns a dataframe containing information about the nifties owned by
@@ -30,6 +33,6 @@ the specified user
 nifty_gateway_user_nifties
 }
 \examples{
-\dontrun{
+\donttest{
 nifties <- nifty_gateway_user_nifties('tommy')}
 }
